@@ -1,0 +1,29 @@
+//colors
+$darkGreyBlue: hsl(215, 19%, 25%);
+$darkCyan: hsl(179, 81%, 29%);
+$grey: hsl(215, 5%, 54%);
+$lightCream: hsl(43, 78%, 98%);
+$paleOrange: hsl(25, 94%, 86%);
+$white: hsl(0, 0%, 100%);
+$black: #333d48;
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;700;900&display=swap");
+
+$heading-font-family: "Fraunces", serif;
+$headingfs-alt-big: 9.375rem; //150px
+$headingfs-h1: 4.5rem; //72px
+$headingfs-h2: 3rem; //48
+$headingfs-h3: 2.25rem; //36
+$headingfs-h4: 2rem; //32
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+$body-font-family: "Barlow", sans-serif;
+$bodyfs-body: 1.625rem;
+$bodyfs-nav: 0.9375rem;
+$bodyfw-body: 400;
+$bodyfw-nav: 700;
+
+$font-med: 1.125rem; //18px
+$font-sm: 0.875rem; //14px
+$font-lg: 1.25rem;
+$font-xlg: 3.25rem;

@@ -1,0 +1,132 @@
+.feature {
+  background-image: url("/assets/plan/mobile/bg-order-summary.png");
+  background-repeat: no-repeat;
+  background-size: 54.5625rem;
+  //   background: #2c343e;
+  border-radius: 0.625rem;
+
+  margin: 0 auto 5rem auto;
+  height: 93.6875rem;
+  text-align: center;
+  width: 20.4375rem;
+  @include breakpoint-up(medium) {
+    width: 43rem;
+    height: 35.8125rem;
+    background: $darkGreyBlue;
+    margin: 0 0 30rem 2rem;
+  }
+  @include breakpoint-up(large) {
+    width: 80rem;
+    height: 45.5rem;
+    margin: 0 0 15rem 5.5rem;
+  }
+  h3,
+  p {
+    color: $lightCream;
+  }
+  &__heading {
+    border-radius: 0.625rem;
+    margin-bottom: 3rem;
+    background: $darkGreyBlue;
+    height: 16rem;
+    padding-top: 3rem;
+    @include breakpoint-up(medium) {
+      width: 33.75rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+    @include breakpoint-up(large) {
+      margin-bottom: 10.5rem;
+    }
+
+    h3 {
+      font-size: $bodyfs-body;
+      @include breakpoint-up(large) {
+        margin-top: 5.25rem;
+        font-size: 2.5rem;
+      }
+    }
+    p {
+      color: $lightCream;
+      font-weight: normal;
+      width: 80%;
+      margin: 0 auto;
+      @include breakpoint-up(medium) {
+        width: 98%;
+        font-size: 1rem;
+      }
+    }
+  }
+  &__list {
+    @include breakpoint-up(large) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+  &__item {
+    background: $darkCyan;
+    border-radius: 0.5rem;
+    width: 17.4375rem;
+    height: 23.75rem;
+    margin: 0 auto 2rem;
+
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35.8125rem;
+      height: 11.25rem;
+    }
+
+    @include breakpoint-up(large) {
+      width: 21.875rem;
+      height: 23.75rem;
+
+      flex-direction: column;
+    }
+    img {
+      width: 4.5rem;
+      height: 4.5rem;
+      margin: 5rem 0 2rem 0;
+      @include breakpoint-up(medium) {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 0 2rem 0 0;
+      }
+      @include breakpoint-up(large) {
+        margin: 3rem 0;
+      }
+    }
+    &__info {
+      @include breakpoint-up(medium) {
+        width: 21.5rem;
+        height: 6.125rem;
+        text-align: left;
+      }
+      @include breakpoint-up(large) {
+        width: 50%;
+        text-align: center;
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      @include breakpoint-up(medium) {
+        margin-bottom: 1rem;
+      }
+    }
+    &__text {
+      width: 13.125rem;
+      margin: auto;
+
+      @include breakpoint-up(medium) {
+        width: 21.5rem;
+      }
+      @include breakpoint-up(large) {
+        width: 100%;
+      }
+    }
+  }
+}

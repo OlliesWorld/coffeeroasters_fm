@@ -1,0 +1,44 @@
+.footer {
+  background: $black;
+  width: 20.4375rem;
+  margin: 0 auto;
+  @include breakpoint-up(medium) {
+    width: 90%;
+    margin-left: 2rem;
+  }
+  &__logo {
+    margin: 3rem auto 1rem auto;
+    padding: 3rem 0 0 0;
+    width: 13.4375rem;
+  }
+  &__links {
+    width: 7.5rem;
+    @include breakpoint-up(medium) {
+      display: flex;
+      width: 17.5rem;
+    }
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+
+    color: $white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.75rem;
+    padding-bottom: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &__socials {
+    width: 1.5rem;
+    display: flex;
+    margin: 2rem auto;
+
+    justify-content: center;
+    align-items: center;
+    a {
+      padding: 0 1rem 2rem 0;
+    }
+  }
+}

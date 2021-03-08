@@ -1,0 +1,66 @@
+.hero {
+  background: $lightCream;
+  margin-bottom: 3rem;
+  &__photo {
+    background-image: url("/assets/home/mobile/image-hero-coffeepress.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-position: center center;
+
+    @include breakpoint-up(medium) {
+      background-image: url("/assets/home/tablet/image-hero-coffeepress.jpg");
+      width: 90%;
+    }
+    @include breakpoint-up(large) {
+      background-image: url("/assets/home/desktop/image-hero-coffeepress.jpg");
+      background-position: center right;
+      width: 80rem;
+    }
+  }
+  &__text {
+    width: 20.4375rem;
+    height: 31.25rem;
+    margin: 0 auto;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+      margin: 0;
+      text-align: left;
+    }
+    @include breakpoint-up(large) {
+      width: 50%;
+    }
+    h2 {
+      color: #a9aaa7;
+
+      @include breakpoint-up(large) {
+        font-size: $font-xlg;
+        color: $white;
+      }
+    }
+    p {
+      font-size: 0.9375rem;
+      line-height: 1.5625rem;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+    a {
+      border-radius: 6px;
+      font-size: 1.125rem;
+      font-family: $heading-font-family;
+      font-weight: 900;
+      line-height: 1.5625rem;
+      color: $lightCream;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 3.5rem;
+      padding-top: 1rem;
+
+      &:hover {
+        background: #66d2cf;
+      }
+    }
+  }
+}
